@@ -1,0 +1,20 @@
+.Menu h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+.Menu hr {
+  width: calc(100% + 120px);
+  position: relative;
+  left: -60px;
+}
+
+@media screen and (max-width: 414px) {
+  .Menu h1 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
