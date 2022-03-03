@@ -1,0 +1,145 @@
+.OrderItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.actionMenu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.addDeleteButton {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.addDeleteButton a {
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-weight: 500;
+  background: linear-gradient(to left, #fc4a1a, #f7b733, #fc4a1a);
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 2px;
+  background-size: 200%;
+  transition: 0.5s;
+}
+
+.addDeleteButton a:hover {
+  background-position: right;
+}
+
+.deleteButton {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteButton img {
+  cursor: pointer;
+  background: linear-gradient(to left, #fc4a1a, #f7b733, #fc4a1a);
+  padding: 8px 15px;
+  border-radius: 2px;
+  background-size: 200%;
+  transition: 0.5s;
+}
+
+.deleteButton img:hover {
+  background-position: right;
+}
+
+.productQuantity {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.totalPrice {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px;
+}
+
+.productDescription {
+  width: calc(100% / 2);
+}
+
+.productName {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.ingredientName {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ingredientTitleQty {
+  padding: 5px;
+}
+
+@media screen and (max-width: 414px) {
+  .OrderItem {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .actionMenu {
+    height: 50px;
+    padding: 10px 0 10px 0;
+  }
+
+  .addDeleteButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
+
+  .addDeleteButton a {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 2px;
+  }
+
+  .deleteButton {
+    margin: 10px;
+  }
+
+  .deleteButton img {
+    padding: 5px 10px;
+  }
+
+  .productQuantity {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .totalPrice {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .productDescription {
+    width: 100%;
+    text-align: center;
+  }
+
+  .productName {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
