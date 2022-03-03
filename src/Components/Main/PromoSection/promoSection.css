@@ -1,0 +1,35 @@
+.promoSection {
+  width: 50%; /* Добавила ширину - Диля*/
+  margin: 0 auto;
+}
+
+.promoSectionProducts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.promoSection h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 414px) {
+  .promoSection {
+    width: 100%; /* Добавила ширину - Диля*/
+  }
+
+  .promoSection h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+}
