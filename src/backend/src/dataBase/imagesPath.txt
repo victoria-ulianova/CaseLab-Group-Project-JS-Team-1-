@@ -1,0 +1,20 @@
+Example imagePath = 'https://caselab-group-1.herokuapp.com/images/Pepsi.png'
+
+iconAdd.svg
+iconCart.svg
+iconClose.svg
+iconRemove.svg
+logo.png
+Mirinda.png
+Pepsi.png
+PepsiCherry.png
+PepsiZero.png
+sauseBarbecue.png
+sauseCheese.png
+sauseGarlic.png
+shawarma4Cheese.png
+shawarmaChicken.png
+shawarmaChicken&Mushrooms.png
+shawarmaHuntSausages.png
+shawarmaVegan.png
+welcomeImage.png
