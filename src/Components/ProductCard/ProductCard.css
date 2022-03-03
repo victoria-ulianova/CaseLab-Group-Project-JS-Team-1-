@@ -1,0 +1,99 @@
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 450px; /* Изменила фиксированную высоту (450px) - Диля*/
+  width: calc((100% - 40px * 4) / 5.5);
+  min-width: 200px;
+  padding: 20px 18px 5px 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  box-shadow: 0 0 10px gray;
+  margin-bottom: 40px;
+}
+.promoProductCard {
+  width: calc((100% - 70px * 2) / 3);
+}
+.productCardImage {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 18px;
+}
+.productCardTitle {
+  font-weight: 500;
+}
+.productCardInfo span:first-of-type {
+  margin-right: 30px;
+  color: #a4acad;
+}
+hr {
+  border: 0.5px solid #a4acad;
+}
+.addToCardBtnBar {
+  display: flex;
+  justify-content: space-between;
+}
+.addToCardBtn {
+  background: #f46d40;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  width: 50%;
+  max-width: 150px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  position: relative;
+  left: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.addToCardBtnPromo {
+  left: 0%;
+}
+.addToCardBtn:hover {
+  transition: 1s;
+  color: black;
+}
+.addToCardBtn::before {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  content: "";
+  width: 200%;
+  padding: 0.5px;
+  background: #a4acad;
+}
+.productCardTitle,
+.productCardInfo {
+  margin: 0;
+}
+.promoPrice {
+  font-family: serif;
+  display: flex;
+  flex-direction: column;
+}
+.promoPrice span:first-child {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 414px) {
+  .ProductCard {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .addToCardBtn {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
