@@ -1,0 +1,120 @@
+.Modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+.modalCard {
+  box-sizing: border-box;
+  max-width: 950px;
+  min-width: 570px;
+  width: 45%;
+  max-height: 90%;
+  padding: 30px 10% 10px 10%;
+  background: #ffffff;
+  text-align: center;
+  position: absolute;
+  overflow: scroll;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+}
+.modalCardImage {
+  object-fit: cover;
+  width: 90%;
+}
+.modalCardPrice::after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background: #a4acad;
+  position: absolute;
+  transform: translate(-60%, 30px);
+}
+.addToCardModalBtn {
+  background: #f46d40;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: none;
+  width: 50%;
+  max-width: 150px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  position: relative;
+  right: -180px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.addToCardModalBtn:hover {
+  transition: 1s;
+  color: black;
+}
+.iconClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.modalCard h3 {
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+.modalCard h4 {
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.modalCardPriceValue {
+  font-size: 40px;
+  line-height: 46px;
+}
+.modalCard .promoPrice {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 414px) {
+  .modalCard {
+    max-width: 412px;
+    min-width: 350px;
+  }
+
+  .addToCardModalBtn {
+    font-size: 15px;
+    line-height: 18px;
+    right: -5px;
+  }
+
+  .modalCard h3 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  .modalCard h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .modalCardPriceValue {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .modalCard .promoPrice {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
