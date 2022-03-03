@@ -1,0 +1,114 @@
+.Main {
+  width: 100%;
+}
+
+.welcomeSection {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcomeWords {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+  text-align: left;
+}
+
+.welcomePicture {
+  width: 100%;
+}
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.menuButton a {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background: linear-gradient(to left, #fc4a1a, #f7b733, #fc4a1a);
+  text-decoration: none;
+  padding: 15px 50px;
+  border-radius: 2px;
+  background-size: 200%;
+  transition: 0.5s;
+}
+
+.menuButton a:hover {
+  background-position: right;
+}
+
+.aboutUS {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  padding: 25px;
+}
+
+.aboutUsTitle {
+  text-align: left;
+  padding: 0 0 10px 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.aboutUsText {
+  text-align: justify;
+  padding: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .welcomeWords {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .welcomePicture {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .welcomeWords {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .welcomePicture {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .welcomeSection {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .welcomeWords {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+  }
+
+  .welcomePicture {
+    width: 100%;
+  }
+
+  .aboutUsTitle {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .aboutUsText {
+    font-size: 0.8rem;
+  }
+}
