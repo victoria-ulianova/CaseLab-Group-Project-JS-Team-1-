@@ -1,0 +1,137 @@
+
+input {
+    border:none;
+    width: 284px;
+    height: 40px;
+    right: 1207px;
+    top: 1062px;
+    font-size: 18px;
+    background: #ffff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .Login {
+    margin: 0 auto;
+  }
+  
+  button.loginBtn {
+    
+    width: 277px;
+    height: 45px;
+    right: 433px;
+    border-radius: 5px;
+    background: #f46d40;
+    font-size: 14px;
+    margin: 10px 0px 10px 4px;
+  
+  }
+  h2 {
+    margin: 1em 1em 1em 2em;
+    
+  }
+  .cart_modal >.modalCard{
+    overflow:auto;
+    padding:100px;
+   
+  }
+  
+  fieldset{
+  border:none;
+  margin: 1em 1em 1em 1em;
+  margin-bottom:20px;
+  border:1px solid #000;
+  margin-left:-1px;
+  
+  }
+  form{
+   width:200px;
+   height:650px;
+   padding:10px 300px 1px 150px;
+  }
+  
+  fieldset.field_login{
+    border:none;
+    margin-left: -150px;
+  }
+  
+  
+  @media screen and (max-width: 1440px){
+    form{
+      height:650px;
+      padding:10px 1000px 1px 150px;
+     }
+     
+  }
+  
+  @media screen and (max-width: 960px){
+    form{
+      height:280px;
+      padding:10px 500px 1px 150px;
+     }
+     input{
+       width:180px;
+       height:0px;
+       font-size:14px;
+     }
+     fieldset{
+       margin:-1em 1em 2em 1em;
+     }
+     button.loginBtn{
+       width: 140px;
+       height: 30px;
+       margin: -20px 0px 10px 35px;
+     }
+     h2 {
+      margin: 1em 1em 1.5em 2.2em;
+      font-size: 18px;
+      
+    }
+    fieldset.field_password{
+     margin: -1em 1em 1.5em 1em;
+    }
+    
+  
+  }
+  
+  @media screen and (max-width: 412px){
+    form{
+      height:280px;
+      padding:10px 500px 1px 120px;
+     }
+     input{
+       width:120px;
+       height:0px;
+       font-size:14px;
+     }
+     fieldset{
+       margin:-1em 1em 2em 1em;
+     }
+     button.loginBtn{
+       font-size:10px;
+       width: 100px;
+       height: 25px;
+       margin: -20px 0px 10px 25px;
+     }
+     h2 {
+      margin: 1em 1em 2em 2.2em;
+      font-size: 13px;
+      
+    }
+    fieldset.field_password{
+     margin: -1em 1em 1em 1em;
+    }
+    
+    .cart_modal >.modalCard{
+      overflow:auto;
+      padding:35px;
+      min-width: 200px;
+  
+    padding:213px;
+    width: 300px;
+  }
+  
+  fieldset.fields{
+    border:none;
+  }
+}
